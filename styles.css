@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('myFont.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyFont', sans-serif; 
+}
+
+.calculator {
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+    align-items: center;
+    border: solid #ffc4f3 5px;
+    background-color: #ff36af;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.row {
+    border: solid brown 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 13%;
+    border-radius: 10px;
+    color: brown;
+    background-color: #ffc4f3;
+}
+
+.button {
+    width: 20%;
+    height: 90%;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color: #ffc4f3;
+    color: brown;
+    font-weight: 500;
+    font-family: 'MyFont', sans-serif;
+    font-size: 32px;
+    border: solid brown 2px;
+    border-radius: 10px;
+}
+
+.row:not(.one) {
+    border: none;
+    background-color: #ff36af;
+}
+
+.factorial button, .delete button, .pow button {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.one.row {
+    font-size: 32px;
+    overflow: auto; 
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+}
